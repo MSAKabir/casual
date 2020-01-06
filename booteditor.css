@@ -26,9 +26,9 @@
   display: block;
   text-align: center;
   margin-top: 5px;
-  margin-right: 5px;
+  margin-left: 5px;
   padding: 3px;
-  padding-right: 4px;
+  padding-left: 4px;
   text-decoration: none;
   background-color: rgb(150,150,150);
    color: rgb(0,5,0);
@@ -117,9 +117,9 @@ padding: 2px;
 
 #navbar a {
 
-  margin-right: 4px;
+  margin-left: 4px;
   padding: 2px;
-   padding-right: 3px;
+   padding-left: 3px;
   text-decoration: none;
   border:3px solid rgb(0,30,0);
   border-radius: 8px 8px;
