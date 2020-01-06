@@ -5,6 +5,7 @@
     body{
         font-size: 20px;
     }
+
 .cont{
   margin-left: 2%;
   margin-right: 2%;
@@ -51,19 +52,13 @@ padding: 2px;
 }
 .border iframe {
     border: none;
-    height: 1125px;
-    width: 100%;
     margin: 0;
     padding: 0;
     opacity: 1;
     display:block; /* Add this */
 }
 #home{
-	padding-top: 50px;
-}
-
-#home{
-  height: 1120px;
+  height: 1100px;
 }
 
             
@@ -154,14 +149,8 @@ color: rgb(0,0,50);
 border:4px solid rgb(130,130,100);
 padding: 1px;
 }
-
-
-
-.border iframe {
-    height: 900px;
-    width: 100%;
-}
 #home{
-  height: 900px;
+  height: 800px;
 }
+
 }
