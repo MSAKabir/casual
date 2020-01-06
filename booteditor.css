@@ -52,10 +52,10 @@ padding: 2px;
 }
 
 #home{
-  height: 1100px;
+  height: 900px;
 }
 #about {
-  height: 1100px;
+  height: 900px;
 }
 #background {
   height: 900px;
@@ -68,10 +68,9 @@ padding: 2px;
             background-color: #415c71;
               height: 900px;
         }
-        #skill {
-            background-color: #eb7e7f;
-              height: 900px;
-        }
+#skill {
+  height: 1800px;
+}
         #course {
             background-color: #415c71;
               height: 900px;
@@ -146,5 +145,8 @@ padding: 1px;
 }
 #background{
 	height: 800px;
+}
+#skill {
+  height: 1600px;
 }
 }
