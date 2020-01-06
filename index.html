@@ -59,7 +59,7 @@
                     <li>
                         <a  href="#contact">CONTACT</a>
                     </li>
-                    <li id = "switch">
+                    <li id = "switch2 ">
                         <a  href="#switch">SWITCH</a>
                     </li>
                 </ul>
@@ -130,7 +130,7 @@
                 var curLink = $(this);
                 var scrollPoint = $(curLink.attr('href')).position().top;
                 $('body,html').animate({
-                    scrollTop: scrollPoint
+                    scrollTop: scrollPoint 
                 }, 500);
             })
             $(window).scroll(function () {
@@ -144,16 +144,20 @@
                     var curLink = $(this);
                     var refElem = $(curLink.attr('href'));
                     //Compare the value of current position and the every section position in each scroll
-                    if (refElem.position().top < currentScrollPos+2 && refElem.position().top + refElem.height() > currentScrollPos-2) {
+                    if (refElem.position().top < currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+                        console.log(refElem.height());
                         //Remove class active in all nav
-                        $('#top-nav > ul > li').removeClass("active");
+                    
+                        $('#top-nav > ul > li').removeClass("active"); 
                         //Add class active
                         curLink.parent().addClass("active");
                     }
                     else {
                         curLink.parent().removeClass("active");
                     }
-                });
+                    
+                }
+                );
             }
         });
     </script>
