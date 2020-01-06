@@ -50,27 +50,16 @@ color: rgb(0,0,50);
 border:5px solid rgb(130,130,100);
 padding: 2px;
 }
-.border iframe {
-    border: none;
-    margin: 0;
-    padding: 0;
-    opacity: 1;
-    display:block; /* Add this */
-}
+
 #home{
   height: 1100px;
 }
-
-            
-
-        #about {
-            background-color: #eb7e7f;
-              height: 900px;
-        }
-        #background {
-            background-color: #415c71;
-              height: 900px;
-        }
+#about {
+  height: 1100px;
+}
+#background {
+  height: 900px;
+}
         #research {
             background-color: #eb7e7f;
               height: 900px;
@@ -152,5 +141,10 @@ padding: 1px;
 #home{
   height: 800px;
 }
-
+#about{
+	height: 800px;
+}
+#background{
+	height: 800px;
+}
 }
