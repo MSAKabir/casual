@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+    body{
+        font-size: 20px;
+    }
+.cont{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#navbar {
+  padding-top: 3px;
+  padding-bottom: 7px;
+  background-image: linear-gradient(to right, #444, #222);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid #BEBEBF;
+  z-index: 1;
+  margin: 0;
+}
+
+#navbar a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  padding-left: 4px;
+  text-decoration: none;
+  background-color: rgb(150,150,150);
+   color: rgb(0,5,0);
+  border:4px solid rgb(0,30,0);
+  border-radius: 10px 10px;
+}
+
+
+#navbar a:hover {
+  border:5px solid rgb(200,200,200);
+  background-color: rgb(100,100,100);
+  color: rgb(200,200,200);
+  padding: 2px;
+}
+
+#navbar .active a{
+background-color: rgb(200,200,200);
+color: rgb(0,0,50);
+border:5px solid rgb(130,130,100);
+padding: 2px;
+}
+.border iframe {
+    border: none;
+    height: 1125px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    display:block; /* Add this */
+}
+#home{
+	padding-top: 50px;
+}
+
+#home{
+  height: 1170px;
+}
+
+            
+
+        #about {
+            background-color: #eb7e7f;
+              height: 900px;
+        }
+        #background {
+            background-color: #415c71;
+              height: 900px;
+        }
+        #research {
+            background-color: #eb7e7f;
+              height: 900px;
+        }
+        #project{
+            background-color: #415c71;
+              height: 900px;
+        }
+        #skill {
+            background-color: #eb7e7f;
+              height: 900px;
+        }
+        #course {
+            background-color: #415c71;
+              height: 900px;
+        }
+        #award {
+            background-color: #eb7e7f;
+              height: 900px;
+        }
+        #contact {
+            background-color: #eb7e7f;
+              height: 900px;
+        }
+        
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ 
+ 
+ /*------------------------------------------                    ANDROID                -------------------------------------------------------------------*/
+
+ 
+ 
+  /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ 
+ 
+ 
+ 
+ 
+ 
+ @media only screen and (max-width: 700px) {
+*{
+    margin: 0;
+    padding: 0;
+}
+        body{
+        font-size: 11px;
+    }
+
+#navbar {
+  border-bottom: 3px solid #BEBEBF;
+  padding-bottom: 5px;
+}
+
+#navbar a {
+
+  margin-left: 4px;
+  padding: 2px;
+   padding-left: 3px;
+  text-decoration: none;
+  border:3px solid rgb(0,30,0);
+  border-radius: 8px 8px;
+}
+
+
+#navbar a:hover {
+  border:4px solid rgb(200,200,200);
+  padding: 1px;
+}
+
+#navbar .active a{
+background-color: rgb(200,200,200);
+color: rgb(0,0,50);
+border:4px solid rgb(130,130,100);
+padding: 1px;
+}
+
+
+
+.border iframe {
+    height: 720px;
+    width: 100%;
+}
+#home{
+  height: 765px;
+}
+}
