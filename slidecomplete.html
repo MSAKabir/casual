@@ -100,7 +100,6 @@ background-color: #FDFFDF;
   height: 15px;
   width: 15px;
   margin: 2px 2px;
-  background-color: #FDFFDF;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -243,11 +242,10 @@ function showSlides(n) {
   } 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", " not");
-    console.log(dots[i].className);
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" not"," active");
-  console.log(dots[slideIndex-1].className);
+
   t = setTimeout(showSlides, 5000);
 }
 
