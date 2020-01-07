@@ -75,30 +75,27 @@ padding: 2px;
   height: 900px;
 }
 #background {
-  height: 900px;
+  height: 800px;
 }
 #research {
-  height: 4500px;
+  height: 2800px;
  }
-        #project{
-            background-color: #415c71;
-              height: 900px;
-        }
+#project{
+   height: 3000px;
+}
 #skill {
   height: 3200px;
 }
-        #course {
-            background-color: #415c71;
-              height: 900px;
-        }
+#course {
+   height: 900px;
+}
 
 #award {
    height: 900px;
 }
-        #contact {
-            background-color: #eb7e7f;
-              height: 900px;
-        }
+#contact {
+    height: 900px;
+}
         
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -191,16 +188,26 @@ padding: 1px;
 	height: 800px;
 }
 #background{
-	height: 800px;
+	height: 700px;
 }
 #research {
-  height: 3600px;
+  height: 2700px;
  }
+ #project{
+   height: 2500px;
+}
 
 #skill {
   height: 2900px;
 }
+#course {
+   height: 800px;
+}
 #award {
    height: 800px;
 }
+#contact {
+    height: 800px;
+}
+
 }

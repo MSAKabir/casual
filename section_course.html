@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+}
+body {font-family: Times New Roman; margin:0; font-size: 20px;}
+
+a{
+   color: rgb(210,230,230);
+   text-decoration: none;
+}
+a:visited{
+     color: rgb(210,230,230);
+}
+a:hover{
+	text-decoration: underline;
+}
+.course{
+  background-color: black;
+  background-image: url("w9a.jpg");
+  background-size: cover;
+  color: #A8B8DB;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 500px;
+
+}
+.course1{
+	  border: 3px solid rgb(0,100,100);
+	  border-radius: 10px;
+	  padding: 20px;
+	  margin: 20px;
+	  background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(10,10,10,0.3));
+	}
+	 
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+}
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media only screen and (max-width: 700px) {
+  body{
+    font-size: 13px;
+  }
+
+  .course{
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 120px;
+}
+  
+.course1{
+	  border: 2px solid rgb(0,100,100);
+	  border-radius: 7px;
+	  padding: 2.5%;
+
+}
+
+	</style>
+</head>
+<body>
+<div class="course">
+	<div class="course1">
+
+ <h1><u>Courses Conducted</u></h1>
+
+                <div class="row">
+
+                    <div class="column1">
+
+                <ul>
+
+                    <li style="list-style-type: none;"> <u>Course Name </u></li>
+                                    
+                    <li ><a href="http://www.aust.edu/eee/lab_manual/1_2_eee_1210.pdf" target="_blank" > Electrical Circuit Simulation Lab </a></li>
+                                                                                      
+                    <li ><a href="http://www.aust.edu/eee/lab_manual/2_1_eee_2188.pdf" target="_blank" > Electrical Machines </a></li>
+                    <li ><a href="http://www.aust.edu/eee/lab_manual/2_2_eee_2204.pdf" target="_blank" >Electronic Circuits - II Lab </a></li>
+                    <li >Analog and Digital Electronics </li>
+                    <li >Electrical Service Design </li>
+                    <li ><a href="http://www.aust.edu/eee/lab_manual/3_1_eee_3110.pdf" target="_blank" >Numerical Technique Lab </a></li>
+                    <li >MPU, Interfacing and System Design Lab </li>
+                </ul>
+
+                </div>
+
+
+            <div class="column2">
+
+            <ul style="list-style-type: none;">
+            
+                    <li> <u>Course No. </u></li>
+                                    
+                    <li > EEE-1210</a></li>
+                    <li > EEE-2188</a></li>
+                    <li > EEE-2204</a></li>
+                    <li > EEE-2285</a></li>
+                    <li > EEE-3100</a></li>
+                    <li > EEE-3110</a></li>
+                    <li > EEE-3210</a></li>
+
+             </ul>
+           </div>
+         </div>
+     </div>
+ 
+ </div>
+</body>
+</html>
