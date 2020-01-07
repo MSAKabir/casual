@@ -30,23 +30,39 @@
   padding: 3px;
   padding-left: 4px;
   text-decoration: none;
-  background-color: rgb(150,150,150);
-   color: rgb(0,5,0);
-  border:4px solid rgb(0,30,0);
+  background-image: linear-gradient(to right, #111, #000);
+  color: rgba(200,200,200,0.8);
+  border:4px solid rgba(200,200,200,0.8);
   border-radius: 10px 10px;
 }
-
+#navbar button {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  text-decoration: none;
+background-image: linear-gradient(to right, rgba(0,0,20,.9),rgba(0,0,10,1));
+  color: rgba(250,250,250,0.5);
+  border:4px solid rgba(250,250,250,0.5);
+  font-size: 15px;
+}
 
 #navbar a:hover {
-  border:5px solid rgb(200,200,200);
-  background-color: rgb(100,100,100);
-  color: rgb(200,200,200);
+  border:5px solid rgb(250,250,250);
+ background-image: linear-gradient(to right, rgba(50,0,0,.9),rgba(20,0,10,1));
+  color: rgb(250,250,250);
   padding: 2px;
+}
+#navbar button:hover {
+  border:4px solid rgba(250,250,250,0.5);
+ background-image: linear-gradient(to right, rgba(0,50,0,.9),rgba(0,10,0,1));
+  color:(50,50,50,0.5);
 }
 
 #navbar .active a{
-background-color: rgb(200,200,200);
-color: rgb(0,0,50);
+ background-image: linear-gradient(to right, rgba(250,250,230,1),rgba(200,200,180,1));
+color: rgb(80,80,60);
 border:5px solid rgb(130,130,100);
 padding: 2px;
 }
@@ -121,25 +137,51 @@ padding: 2px;
   padding: 2px;
    padding-left: 3px;
   text-decoration: none;
-  border:3px solid rgb(0,30,0);
+  border:3px solid rgba(200,200,200,0.8);
   border-radius: 8px 8px;
 }
 
-
-#navbar a:hover {
-background-color: rgb(150,150,150);
-   color: rgb(0,5,0);
-border:3px solid rgb(0,30,0);
-  padding: 2px;
-    padding-left: 3px;
-}
-
 #navbar .active a{
-background-color: rgb(200,200,200);
-color: rgb(0,0,50);
 border:4px solid rgb(130,130,100);
 padding: 1px;
 }
+
+#navbar a:hover {
+  background-image: linear-gradient(to right, #111, #000);
+  color: rgba(200,200,200,0.8);
+  border:3px solid rgba(200,200,200,0.8);
+padding: 2px;
+padding-left: 3px;
+}
+
+
+
+
+#navbar button {
+  margin-left: 4px;
+  padding: 3px;
+  text-decoration: none;
+  border:3px solid rgba(250,250,250,0.5);
+  font-size: 12px;
+}
+
+#navbar button:hover {
+  margin-left: 4px;
+  padding: 3px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgba(0,0,20,.9),rgba(0,0,10,1));
+  color: rgba(250,250,250,0.5);
+  border:3px solid rgba(250,250,250,0.5);
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
 #home{
   height: 800px;
 }
