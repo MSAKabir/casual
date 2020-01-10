@@ -77,11 +77,9 @@ padding: 2px;
 #background {
   height: 800px;
 }
-#research {
-  height: 2800px;
- }
+
 #project{
-   height: 3000px;
+   height: 2200px;
 }
 #skill {
   height: 3200px;
@@ -190,11 +188,9 @@ padding: 1px;
 #background{
 	height: 700px;
 }
-#research {
-  height: 2700px;
- }
+
  #project{
-   height: 2500px;
+   height: 1600px;
 }
 
 #skill {
