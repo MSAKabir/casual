@@ -69,30 +69,32 @@ padding: 2px;
 }
 
 #home{
-  height: 900px;
+  height: 1500px;
 }
 #about {
-  height: 900px;
+  height: 1500px;
 }
 #background {
-  height: 800px;
+  height: 1500px;
 }
-
+#research {
+  height: 4500px;
+ }
 #project{
-   height: 2200px;
+   height: 3500px;
 }
 #skill {
-  height: 3200px;
+  height: 4000px;
 }
 #course {
-   height: 800px;
+   height: 1500px;
 }
 
 #award {
-   height: 900px;
+   height: 1500px;
 }
 #contact {
-    height: 900px;
+    height: 1500px;
 }
         
 
@@ -179,31 +181,15 @@ padding: 1px;
 
 
 
-#home{
-  height: 800px;
-}
-#about{
-	height: 800px;
-}
-#background{
-	height: 700px;
-}
 
+#research {
+  height: 3200px;
+ }
  #project{
-   height: 1600px;
+   height: 2500px;
 }
 
 #skill {
   height: 2900px;
-}
-#course {
-   height: 700px;
-}
-#award {
-   height: 800px;
-}
-#contact {
-    height: 800px;
-}
 
 }
