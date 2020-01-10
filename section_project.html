@@ -16,10 +16,10 @@
     button:hover{
       cursor: pointer;
     }
-#myDIV, #myDIVm, #myDIVmg{
+#myDIV, #myDIVm, #myDIVmg, #myDIVa{
       display: none;
     }
-    #myButton1,  #myButton1m,  #myButton1mg{
+    #myButton1,  #myButton1m,  #myButton1mg, #myButton1a{
       display: block;
       width:30%;
       margin-top: 1%;
@@ -30,7 +30,7 @@
       border-radius: 20px;
       background-image: linear-gradient(to left, rgba(255,255,255,0.3), rgba(200,200,200,0.3));
     }
-    #myButton2, #myButton2m, #myButton2mg{
+    #myButton2, #myButton2m, #myButton2mg, #myButton2a{
       display: none;
       width:30%;
       margin-top: 1%;
@@ -41,7 +41,7 @@
       border-radius: 20px;
       background-image: linear-gradient(to left, rgba(255,255,255,0.3), rgba(200,200,200,0.3));
     }
-#myButton1m,  #myButton1mg, #myButton2m,  #myButton2mg{
+#myButton1m,  #myButton1mg, #myButton1a, #myButton2m,  #myButton2mg, #myButton2a{
   width: 80%;
   border: 2px solid rgba(87,156,156,0.6);
 }
@@ -214,7 +214,7 @@ a:visited{
                   <li><a href="https://shaikh-abrar-kabir.github.io/Sentence-Detector-for-Triphone-Model/" target="_blank">Sentence Detector for Triphone Model</a></li>
 
 <center><button onclick="change1mg()"  id="myButton1mg">More in MATLAB GUI <i class="fa fa-arrow-circle-down"></i></button></center>
-<center><button onclick="change2mg()"  id="myButton2mg">Hide <i class="fa fa-arrow-circle-up"></i></button></center>
+<center><button onclick="change2mg()"  id="myButton2mg">Hide Extra of MATLAB GUI <i class="fa fa-arrow-circle-up"></i></button></center>
 <div id="myDIVmg"> 
 
                 <li><a href="https://shaikh-abrar-kabir.github.io/Sentence-Detector-for-Monophone-Model/" target="_blank">Sentence Detector for Monophone Model</a></li>
@@ -251,7 +251,7 @@ a:visited{
                    <li><a href="https://shaikh-abrar-kabir.github.io/GIF-to-Video-Converter/" target="_blank">Video Maker using Audio and GIF</a></li>
 
 <center><button onclick="change1m()"  id="myButton1m">More in MATLAB <i class="fa fa-arrow-circle-down"></i></button></center>
-<center><button onclick="change2m()"  id="myButton2m">Hide <i class="fa fa-arrow-circle-up"></i></button></center>
+<center><button onclick="change2m()"  id="myButton2m">Hide Extra of MATLAB <i class="fa fa-arrow-circle-up"></i></button></center>
 <div id="myDIVm">
 
                  
@@ -417,7 +417,13 @@ a:visited{
 
                                 <li><a href="https://shaikh-abrar-kabir.github.io/Wiring-a-500-sq-ft-Flat-with-Circuit-Diagram/" target="_blank">Wiring a Flat with Circuit Diagram</a></li>
 
+
+
                                 <li><a href="https://shaikh-abrar-kabir.github.io/500-kv-Steel-Self-Supporting-Transmission-Tower/" target="_blank">500-kv Steel Self-Supporting Transmission Tower</a></li>
+
+<center><button onclick="change1a()"  id="myButton1a">More in Autocad (2D) <i class="fa fa-arrow-circle-down"></i></button></center>
+<center><button onclick="change2a()"  id="myButton2a">Hide Extra of Autocad (2D) <i class="fa fa-arrow-circle-up"></i></button></center>
+<div id="myDIVa">
 
                                 <li><a href="https://shaikh-abrar-kabir.github.io/Schemaic-Diagram-of-Transformer-and-Three-Phase-Connections/" target="_blank">Schemaic Diagram of Transformer and Three Phase Connections</a></li>
 
@@ -430,6 +436,7 @@ a:visited{
                                 <li><a href="https://shaikh-abrar-kabir.github.io/2-km-FM-Transmitter/" target="_blank">2 km FM Transmitter</a></li>
 
                                 <li><a href="https://shaikh-abrar-kabir.github.io/Automatic-Light-Controller/" target="_blank">Automatic Light Controller</a></li>
+                              </div>
 
                             </ul>
 
@@ -556,7 +563,25 @@ function change2mg()
     x.style.display = "none";
     
 }
-
+function change1a()
+{
+    var elem1 = document.getElementById("myButton1a");
+    var elem2 = document.getElementById("myButton2a");
+    var x = document.getElementById("myDIVa");
+    elem1.style.display = "none";
+    elem2.style.display = "block";
+    x.style.display = "block";   
+}
+function change2a()
+{
+    var elem1 = document.getElementById("myButton1a");
+    var elem2 = document.getElementById("myButton2a");
+    var x = document.getElementById("myDIVa");
+    elem2.style.display = "none";
+    elem1.style.display = "block";
+    x.style.display = "none";
+    
+}
 </script>
 </body>
 </html>
