@@ -80,7 +80,7 @@ padding: 2px;
   height: 4500px;
  }
 #project{
-   height: 3500px;
+   height: 8000px;
 }
 #skill {
   height: 4000px;
@@ -204,10 +204,11 @@ padding: 1px;
   height: 3200px;
  }
  #project{
-   height: 2500px;
+   height: 6000px;
 }
 
 #skill {
   height: 2900px;
 
+}
 }
