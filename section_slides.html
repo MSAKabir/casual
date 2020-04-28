@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <style>
 * {box-sizing: border-box}
 *{
@@ -185,7 +186,7 @@ background-color: #FDFFDF;
 <body>
 <section class="slides">
 
-<div class="slideshow-container">
+<div class="slideshow-container" data-aos="fade-left">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
@@ -224,6 +225,16 @@ background-color: #FDFFDF;
   <span class="dot not" onclick="currentSlide(4)"></span> 
 </div>
 </section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+
+   AOS.init(
+      {
+        delay: 200
+      });
+</script>
+
 <script>
 var slideIndex = 1;
 var t;
