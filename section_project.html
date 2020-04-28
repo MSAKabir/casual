@@ -118,20 +118,25 @@ a:visited{
 
 #p15{
  border: 3px solid rgb(10,0,0);
- border-radius: 10px;
+ border-radius: 50px;
  padding: 10px;
  margin: 10px 15%;
  background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));
- animation: try 1s ease-in-out infinite;
+ animation: try 2s ease-in-out infinite;
  animation-direction: alternate;
 }
 
 
 @keyframes try{
   0%{ border: 3px solid rgb(10,0,0);
-    border-radius: 10px;background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));}
-    100%{ border: 5px solid rgb(50,20,20);
-      border-radius: 30px;background-image: linear-gradient(to left, rgba(220,220,210,0.7), rgba(180,180,160,0.7));}
+
+    border-radius: 50px;background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));}
+    100%{ border: 3px solid rgb(50,00,100);
+      border-left: 7px solid rgb(50,00,100);
+      border-right: 7px solid rgb(50,00,100);
+      padding-right: 6px;
+      padding-left: 6px;
+      border-radius: 100px;background-image: linear-gradient(to left, rgba(220,220,210,0.7), rgba(180,180,160,0.7));}
       
       }
 
@@ -208,6 +213,23 @@ a:visited{
       height: 150px;
 
     }
+
+@keyframes try{
+  0%{ border: 3px solid rgb(10,0,0);
+
+    border-radius: 15px;background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));}
+    100%{ border: 3px solid rgb(50,00,100);
+      border-left: 5px solid rgb(50,00,100);
+      border-right: 5px solid rgb(50,00,100);
+      padding-right: 8px;
+      padding-left: 8px;
+      border-radius: 30px;background-image: linear-gradient(to left, rgba(220,220,210,0.7), rgba(180,180,160,0.7));}
+      
+      }
+
+
+
+
 
   }
 
