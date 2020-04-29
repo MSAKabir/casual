@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <style>
 * {box-sizing: border-box}
 *{
@@ -29,6 +30,7 @@ img{
   max-width: 1000px;
   position: relative;
   margin: auto;
+
 }
 
 /* Next & previous buttons */
@@ -105,37 +107,29 @@ background-color: #FDFFDF;
   margin: 2px 2px;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 1s ease;
 }
 
  .dot:hover {
   background-color: #590404;
+   transition: background-color 0s ease;
 }
 
 .dot.active{
  background-color: #3F00FF;
+ transition: background-color 2s ease;
+ animation: fade 1s infinite;
 }
+/*
+@keyframes fade{
+	from{opacity: 0.5;}
+	to {opacity: 1;}
 }
+*/
+
+.abs-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0.3}50%{opacity:1}100%{opacity:0.3}}
 
 
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 
 
@@ -188,25 +182,25 @@ background-color: #FDFFDF;
 
 <div class="slideshow-container" data-aos="fade-left">
 
-<div class="mySlides fade">
+<div class="mySlides not">
   <div class="numbertext">1 / 4</div>
   <img src="bnr4.jpg" >
   <div class="text2">Md Shaikh Abrar Kabir</div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides not">
   <div class="numbertext">2 / 4</div>
   <img src="work.jpg" >
   <div class="text">Instructed the workshop on "Programming with Python: Hands-on Introduction for Beginners"; AUST IEEE SPS and IEEE ComSoc Joint Student Branch Chapter, 2020 </div>
 </div>  
   
-<div class="mySlides fade">
+<div class="mySlides not">
   <div class="numbertext">3 / 4</div>
   <img src="runner2.jpg" >
   <div class="text">Runner up in Matlab Storming; ENGENIUS, 2017</div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides not">
   <div class="numbertext">4 / 4</div>
   <img src="champ2.jpg" >
   <div class="text">Champion in Inter University Programming Contest on Matlab; AUST IEEE Student Branch, 2016</div>
@@ -274,14 +268,17 @@ function showSlides(n) {
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].className = slides[i].className.replace("mySlides abs-fading", "mySlides not");
   } 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", " not");
   }
   slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace("mySlides not","mySlides abs-fading");
   dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" not"," active");
+  console.log(slides[slideIndex - 1].className );
 
-  t = setTimeout(showSlides, 5000);
+  t = setTimeout(showSlides, 3000);
 }
 
 </script>
