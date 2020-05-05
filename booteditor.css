@@ -35,17 +35,23 @@
   border:4px solid rgb(200,200,200);
   border-radius: 10px 10px;
 }
+.nav li{
+    float: left;
+    list-style-type: none;
+}
+
 #navbar button {
   display: block;
   text-align: center;
   margin-top: 5px;
   margin-left: 5px;
-  padding: 3px;
+  padding: 5px;
   text-decoration: none;
   background-image: linear-gradient(to right, rgb(0,0,20),rgb(0,0,10));
   color: rgb(200,200,250);
   border:4px solid rgb(200,200,250);
   font-size: 15px;
+  cursor: pointer;
 }
 
 #navbar a:hover {
@@ -137,14 +143,14 @@ border:5px solid rgb(130,130,100);}
 
 
 
-   @media only screen and (max-width: 1650px) {
+   @media only screen and (max-width: 1750px) {
  .cont{
   margin-left: 15vw;
 }
  }
      @media only screen and (max-width: 1550px) {
  .cont{
-  margin-left: 10vw;
+  margin-left: 8vw;
 }
  }
      @media only screen and (max-width: 1450px) {
@@ -198,45 +204,47 @@ padding-left: 3px;
 #navbar  .active a{
    background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
 color: rgb(80,80,60);
-border:4px solid rgb(130,130,100);
-padding: 1px;
+border:3px solid rgb(130,130,100);
+padding: 2px;
+animation: act2 1s ease-in-out infinite;
+ animation-direction: alternate;
+
 }
-@keyframes act{
+@keyframes act2{
   0%{ background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
   color: rgb(80,80,60);
-border:4px solid rgb(130,130,100);}
+border:3px solid rgb(130,130,100);}
 
 
   50%{ background-image: linear-gradient(to right, rgb(235,235,215),rgb(190,190,170));
     color: rgb(70,70,50);
-    border:4px solid rgb(115,115,90);}
+    border:3px solid rgb(115,115,90);}
       
   
 
 
   100%{ background-image: linear-gradient(to right, rgb(220,220,200),rgb(180,180,160));
     color: rgb(60,60,40);
-    border:4px solid rgb(100,100,80);}
+    border:3px solid rgb(100,100,80);}
       
       }
 
 
 #navbar button {
   margin-left: 4px;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
   border:3px solid rgb(200,200,250);
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #navbar button:hover {
   margin-left: 4px;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
   background-image: linear-gradient(to right, rgb(0,0,20),rgb(0,0,10));
   color: rgb(200,200,250);
   border:3px solid rgb(200,200,250);
-  font-size: 12px;
 }
 
 
