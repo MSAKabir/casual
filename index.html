@@ -15,6 +15,10 @@
      a {
    outline: 0;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background: rgb(0,0,0);
     </style>
@@ -23,11 +27,12 @@ body{
 </head>
 <body>
     <nav id = "navbar" class="navbar navbar-default navbar-fixed-top" style="">
+        
         <div class="cont">
 
             <div class="collapse navbar-collapse" id="top-nav">
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active">
+                    <li class="active" id = "pera">
                         <a href="#home">HOME</a>
                     </li>
                     <li>
@@ -136,6 +141,8 @@ body{
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
+        var x = document.getElementById("pera");
+        
         $(document).ready(function () {
             //Smooth scrolling when click to nav
             $('#top-nav > ul > li > a').click(function (e) {
@@ -144,14 +151,14 @@ body{
                 var scrollPoint = $(curLink.attr('href')).position().top;
                 $('body,html').animate({
                     scrollTop: scrollPoint
-                }, 500);
+                }, 200);
             })
             $(window).scroll(function () {
                 onScrollHandle();
             });
             function onScrollHandle() {
                 //Navbar shrink when scroll down
-                $(".navbar-default").toggleClass("navbar-shrink", $(this).scrollTop() > 50);
+                //$(".navbar-default").toggleClass("navbar-shrink", $(this).scrollTop() > 50);
                 //Get current scroll position
                 var currentScrollPos = $(document).scrollTop();
                 //Iterate through all node
@@ -159,6 +166,10 @@ body{
                     var curLink = $(this);
                     var refElem = $(curLink.attr('href'));
                     //Compare the value of current position and the every section position in each scroll
+                     if (currentScrollPos <=100){
+                        setTimeout(x.classList.add("active"),0);
+                        console.log("active");
+                    }
                     if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
 
 
@@ -166,6 +177,7 @@ body{
                         //Add class active
                         curLink.parent().addClass("active");
                     }
+                    
                     else {
                         curLink.parent().removeClass("active");
                     }

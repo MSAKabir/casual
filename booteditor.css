@@ -128,26 +128,26 @@ border:5px solid rgb(130,130,100);}
 
  
 
- }
  
-  @media only screen and (max-width: 1700px) {
+ 
+
+
+
+   @media only screen and (max-width: 1650px) {
  .cont{
   margin-left: 15vw;
 }
  }
-
-   @media only screen and (max-width: 1500px) {
+     @media only screen and (max-width: 1550px) {
  .cont{
   margin-left: 10vw;
 }
  }
-  
-   @media only screen and (max-width: 1500px) {
+     @media only screen and (max-width: 1450px) {
  .cont{
   margin-left: 5vw;
 }
  }
-
  @media only screen and (max-width: 800px) {
 *{
     margin: 0;
