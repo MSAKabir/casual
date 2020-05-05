@@ -147,6 +147,12 @@ border:5px solid rgb(130,130,100);}
  .cont{
   margin-left: 5vw;
 }
+
+     @media only screen and (max-width: 1300px) {
+ .cont{
+  margin-left: 2vw;
+}
+
  }
  @media only screen and (max-width: 800px) {
 *{
