@@ -15,23 +15,22 @@
  <script type="text/javascript">
 function Switch() {
 
-var txt = prompt("Press ' 1 ' for Google Sites or ' 2 ' for Casual View or ' 3 ' for Django Website", "1");
+  var txt = prompt("Press ' 1 ' for Django Website or ' 2 ' for Formal View or ' 3 ' for Google Sites", "1");
  
-if (txt === "1") {
+  if (txt === "1") {
 
-  
-    a = "https://sites.google.com/view/msakabir";
+   a = "https://msakabir.herokuapp.com";
+   
 
 }
   else if (txt === "2") {
 
-   a = "https://msakabir.github.io/casual/";
+   a = "https://msakabir.github.io/formal/";
 }
   else if (txt === "3") {
 
-   a = "https://msakabir.herokuapp.com";
+   a = "https://sites.google.com/view/msakabir";
 }
-
 else
 {
    window.open('', '_self', '');
