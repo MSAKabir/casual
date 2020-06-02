@@ -22,8 +22,67 @@
 body{
     background: rgb(0,0,0);
 }
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(150,150,150,0.3);
+  border-radius: 10px;
+   background-image: linear-gradient(to bottom, rgba(200,200,200,1), rgba(100,100,100,1));
+}
 
+::-webkit-scrollbar
+{
+  width: 12px;
+ background-image: linear-gradient(to bottom, rgba(200,200,200,1), rgba(100,100,100,1));
+}
 
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ background-image: linear-gradient(to top, rgba(150,150,145,1), rgba(100,100,90,1));
+}
+
+ul.nav {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+ul.nav li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 5px;
+}
+
+ul.nav::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+  border-radius: 1px;
+ background-image: linear-gradient(to bottom, rgba(20,20,20,1), rgba(10,10,10,1));
+}
+
+ul.nav::-webkit-scrollbar
+{
+
+  height: 10px;
+ background-image: linear-gradient(to bottom, rgba(40,40,40,1), rgba(30,30,30,1));
+}
+
+ul.nav::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+ background-image: linear-gradient(to bottom, rgba(40,40,40,1), rgba(30,30,30,1));
+}
+
+ @media only screen and (max-width: 800px) {
+   ul.nav::-webkit-scrollbar
+{
+
+  height: 8px;
+ background-image: linear-gradient(to bottom, rgba(40,40,40,1), rgba(30,30,30,1));
+}
+
+    }
     </style>
 
 
@@ -32,10 +91,16 @@ body{
 <body>
     <nav id = "navbar" class="navbar navbar-default navbar-fixed-top" style="">
         
-        <div class="cont">
+  
 
-            <div class="collapse navbar-collapse" id="top-nav">
-                <ul class="nav navbar-nav navbar-left">
+           <!--  <div class="collapse navbar-collapse" id="top-nav">
+                <ul class="nav navbar-nav navbar-left"> -->
+
+              <div class="cont" id ="tester">
+
+            <div id="top-nav">
+                <ul class="nav">
+
                     <li class="active" id = "pera">
                         <a href="#home">HOME</a>
                     </li>
@@ -66,13 +131,11 @@ body{
                     <li>
                          <button onclick=" window.open('https://msakabir.github.io/casual/switch/','_blank')" >SWITCH</button>
                     </li>
-
                 </ul>
-               
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+
+
     </nav>
 
 
