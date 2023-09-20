@@ -73,8 +73,8 @@
 color: rgb(80,80,60);
 border:5px solid rgb(130,130,100);
 padding: 2px;
-animation: act 1s ease-in-out infinite;
- animation-direction: alternate;
+animation: act 02s ease-in-out infinite;
+ animation-direction: alternate-reverse;
 }
 
 
@@ -83,20 +83,24 @@ animation: act 1s ease-in-out infinite;
 }
 
 @keyframes act{
-  0%{ background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
-  color: rgb(80,80,60);
-border:5px solid rgb(130,130,100);}
+  0%{ 
+    background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  }
 
+  100%{ 
+    background-image: linear-gradient(to right, rgb(250,250,250),rgb(200,200,200));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  }
 
-  50%{ background-image: linear-gradient(to right, rgb(235,235,215),rgb(190,190,170));
-    color: rgb(70,70,50);
-    border:5px solid rgb(115,115,90);}
-
-  100%{ background-image: linear-gradient(to right, rgb(220,220,200),rgb(180,180,160));
-    color: rgb(60,60,40);
-    border:5px solid rgb(100,100,80);}
-      
-      }
+  /* 100%{ 
+    background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  } */
+  }
 
 #home{
   height: 1000px;
