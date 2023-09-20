@@ -147,10 +147,18 @@ a:visited{
         height: 250px;
         transition: 2s;
       }
-      #p15a{     
+      #p15a iframe{
+        opacity:0.5;
+        width:70%;
+        height: 250px;
+        transition: 2s;
       }
 
       #p15:hover img{
+       transform: rotateX(180deg);
+       opacity:1;
+     }
+     #p15a:hover iframe{
        transform: rotateX(180deg);
        opacity:1;
      }
@@ -208,12 +216,15 @@ a:visited{
       margin: 10px 10%;
 
     }
-    #p15 img{
-
+    #p15 img {
       width:90%;
       height: 150px;
-
     }
+    #p15a iframe{
+        width:90%;
+        height: 150px;
+      }
+
 
 @keyframes try{
   0%{ border: 3px solid rgb(10,0,0);
@@ -238,92 +249,85 @@ a:visited{
 </head>
 <body>
 
-  <div class="pro">
-    <div class="pro1">
-      <h1><u>Projects</u></h1>
+<div class="pro">
+  <div class="pro1">
+    <h1><u>Projects</u></h1>
+    <ul style="list-style-type: none">
+      <div class="pro2">
+        <li>Website 
+          <ul>
+            <li><a href="https://msakabir.github.io/CourseSite/" target="_blank">Course Site</a></li>
+            <li><a href="https://msakabir.github.io/formal/" target="_blank">Formal</a></li>
+            <li><a href="https://msakabir.github.io/casual/" target="_blank">Casual</a></li>
+            <li>using Python (Django)</a></li>
+          </ul>
+        </li>
+      </div>
 
+      <div class="pro2">
+        <li>Hardware
+          <ul>
+            <li><a href="https://shaikh-abrar-kabir.github.io/Digital-Clock/" target="_blank">Digital Clock using Arduino</a></li>
+            <li><a href="https://drive.google.com/open?id=1adOpV8M7rNYZHln9kNci0T1Oz2kAEaUr" target="_blank">Surge Protector</a></li>
+          </ul>
+        </li>
+      </div>
 
-      <ul style="list-style-type: none">
-
-
-      	<div class="pro2">
-
-         <li>Website 
-
-           <ul>
-
-             <li><a href="https://msakabir.github.io/CourseSite/" target="_blank">Course Site</a></li>
-
-             <li><a href="https://msakabir.github.io/formal/" target="_blank">Formal</a></li>
-
-               <li><a href="https://msakabir.github.io/casual/" target="_blank">Casual</a></li>
-
-             <li><a href="https://msakabir.herokuapp.com" target="_blank">using Python (Django)</a></li>
-
-             
-           </ul>
-         </div>
-
-
-        <div class="pro2">
-
-         <li>Hardware
-
-           <ul>
-
-             <li><a href="https://shaikh-abrar-kabir.github.io/Digital-Clock/" target="_blank">Digital Clock using Arduino</a></li>
-
-             <li><a href="https://drive.google.com/open?id=1adOpV8M7rNYZHln9kNci0T1Oz2kAEaUr" target="_blank">Surge Protector</a></li>
-
-
-
-           </ul>
-         </div>
-
-        
-       
-
-
-       <div class="pro2">
-         <li>  Software
-
+      <div class="pro2">
+        <li>  Software
           <ul style="list-style-type: none">
-
-
+            <div class="pro3">
+              <li>Google Sheets and Google Apps Script
+                <ul>
+                  <li style="list-style-type: none;">
+                    <div id="p15">
+                      
+                        <center>
+                        <div id="p15a"> 
+                          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7xsTzvooqVdO_eaWpDyKDbY8QOTxuZ6tj3SgCVxZTXDKXUYejXV9JU4Y7y6Dvlns_yb1xebTNqe7b/pubhtml?widget=true&amp;
+                              headers=false">
+                          </iframe>
+                          </div>
+                          <a href="https://docs.google.com/spreadsheets/d/1OShU-gLe9Okhmu0oJ7VX_dtzlOHDnckIMliySZpTGeE/edit#gid=2049292039"  target="_blank">
+                          <p><center><h4>Routine Automation
+                        </h4></center></p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </div>
             <div class="pro3">
               <li>BER Analyzer
-
                 <ul>
-
-
-
-
-
                   <li style="list-style-type: none;">
                     <div id="p15">
                       <a href="https://shaikh-abrar-kabir.github.io/BER-Analyzer/"  target="_blank">
-                        <center>   <div id="p15a"> <img src="projects/p2.jpg" >
-                        </div>                <h4>MATLAB GUI</h4> </center>
+                        <center>
+                        <div id="p15a"> 
+                          <img src="projects/p2.jpg">
+                        </div>                
+                        <h4>MATLAB GUI</h4> 
+                        </center>
                       </a>
-                    </div></li>
+                    </div>
+                  </li>
 
-
-
-
-                    <li style="list-style-type: none;">
-                      <div id="p15">
-                        <a href="https://shaikh-abrar-kabir.github.io/flutter/"  target="_blank">
-                          <center>   <div id="p15a"> <img src="projects/p4a.JPG" >
-                          </div>                 <h4>Android Studio (Flutter)</h4> </center>
-                        </a>
-                      </div></li>
-
-
-
-
-
-
-                    </ul></li></div>
+                  <li style="list-style-type: none;">
+                    <div id="p15">
+                      <a href="https://shaikh-abrar-kabir.github.io/flutter/"  target="_blank">
+                        <center>   
+                        <div id="p15a"> 
+                          <img src="projects/p4a.JPG">
+                        </div>                 
+                        <h4>Android Studio (Flutter)</h4> 
+                        </center>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </div>
 
                     <div class="pro3">
                      <li>MATLAB GUI Based Applications
