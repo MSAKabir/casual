@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+
+   *{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+  }
+  body {font-family: Times New Roman; margin:0; font-size: 20px;}
+  button {
+    font-size: 20px;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  #myDIV, #myDIVm, #myDIVmg, #myDIVa{
+    display: none;
+  }
+  #myButton1,  #myButton1m,  #myButton1mg, #myButton1a{
+    display: block;
+    width:30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: rgba(87,156,156,0.6);
+    border: 5px solid rgba(87,156,156,0.6);
+    padding: 0.5%;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgba(255,255,255,0.3), rgba(200,200,200,0.3));
+  }
+  #myButton2, #myButton2m, #myButton2mg, #myButton2a{
+    display: none;
+    width:30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: rgba(87,156,156,0.6);
+    border: 5px solid rgba(87,156,156,0.6);
+    padding: 0.5%;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgba(255,255,255,0.3), rgba(200,200,200,0.3));
+  }
+  #myButton1m,  #myButton1mg, #myButton1a, #myButton2m,  #myButton2mg, #myButton2a{
+    width: 80%;
+    border: 2px solid rgba(87,156,156,0.6);
+  }
+
+  .fa{
+    color: rgba(87,156,156,0.6);
+  }
+  ul{
+   list-style-position: inside;
+ }
+ a{
+  text-decoration: none;
+  color: #0B5345;
+
+}
+a:hover{
+ text-decoration: underline;
+}
+a:visited{
+ color: #0B5345;
+}
+.pro{
+  background-color: black;
+  background-image: url("w19a.jpg");
+  background-size:100% 10%;
+  color: #350B0B;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2000px;
+}
+.pro1{
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid rgb(50,100,250);
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(to left, rgba(116,51,255,0.3), rgba(200,200,255,0.5));
+}
+.pro2{
+ border: 3px solid rgb(50,10,10);
+ border-radius: 10px;
+ padding: 10px;
+ margin: 10px;
+ background-image: linear-gradient(to right, rgba(250,250,250,0.6), rgba(200,200,200,0.3));
+}
+.pro3{
+ border: 3px solid rgb(10,0,0);
+ border-radius: 10px;
+ padding: 10px;
+ margin: 10px;
+ background-image: linear-gradient(to right, rgba(250,250,250,0.7), rgba(120,124,71,0.7));
+}
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#p15{
+ border: 3px solid rgb(10,0,0);
+ border-radius: 50px;
+ padding: 10px;
+ margin: 10px 15%;
+ background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));
+ animation: try 2s ease-in-out infinite;
+ animation-direction: alternate;
+}
+
+
+@keyframes try{
+  0%{ border: 3px solid rgb(10,0,0);
+
+    border-radius: 50px;background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));}
+    100%{ border: 3px solid rgb(50,00,100);
+      border-left: 7px solid rgb(50,00,100);
+      border-right: 7px solid rgb(50,00,100);
+      padding-right: 6px;
+      padding-left: 6px;
+      border-radius: 100px;background-image: linear-gradient(to left, rgba(220,220,210,0.7), rgba(180,180,160,0.7));}
+      
+      }
+
+      #p15 img{
+        opacity:0.5;
+        width:70%;
+        height: 250px;
+        transition: 2s;
+      }
+      #p15a iframe{
+        opacity:0.5;
+        width:70%;
+        height: 250px;
+        transition: 2s;
+      }
+
+      #p15:hover img{
+       transform: rotateX(180deg);
+       opacity:1;
+     }
+     #p15a:hover iframe{
+       transform: rotateX(180deg);
+       opacity:1;
+     }
+     #p15a:hover{
+       transform: rotateX(-180deg);
+       opacity:1;
+     }
+
+
+
+
+     @media only screen and (max-width: 800px) {
+      body{
+        font-size: 13px;
+      }
+      button {
+        font-size: 13px;
+      }
+
+      .pro{
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 120px;
+
+      }
+      .pro1{
+        padding: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border: 2px solid rgb(50,100,250);
+        border-radius: 7px;
+      }
+
+      .pro3{
+       border: 2px solid rgb(10,0,0);
+       border-radius: 7px;
+       padding: 1%;
+
+     }
+     .pro2{
+       border: 2px solid rgb(50,10,10);
+       border-radius: 7px;
+       padding: 1%;
+
+     }
+     .column1 {
+      padding: 5px;
+    }
+    .column2 {
+      padding: 5px;
+    }
+
+    #p15{
+
+      margin: 10px 10%;
+
+    }
+    #p15 img {
+      width:90%;
+      height: 150px;
+    }
+    #p15a iframe{
+        width:90%;
+        height: 150px;
+      }
+
+
+@keyframes try{
+  0%{ border: 3px solid rgb(10,0,0);
+
+    border-radius: 15px;background-image: linear-gradient(to left, rgba(250,250,240,0.7), rgba(180,180,160,0.7));}
+    100%{ border: 3px solid rgb(50,00,100);
+      border-left: 5px solid rgb(50,00,100);
+      border-right: 5px solid rgb(50,00,100);
+      padding-right: 8px;
+      padding-left: 8px;
+      border-radius: 30px;background-image: linear-gradient(to left, rgba(220,220,210,0.7), rgba(180,180,160,0.7));}
+      
+      }
+
+
+
+
+
+  }
+
+</style>
+</head>
+<body>
+
+<div class="pro">
+  <div class="pro1">
+    <h1><u>Projects</u></h1>
+    <ul style="list-style-type: none">
+
+
+      <div class="pro2">
+        <li>Community Service
+          <ul>
+            <li><a href="https://www.fiverr.com/msakdreams" target="_blank">Fiverr &#9734;&#9734;&#9734;&#9734;&#9734;</a>
+              <ul>
+                <h4 style="padding-left: 10px;">Python is used in all the projects</h4>
+                <li style="padding-left: 10px;">Automation of Google Chrome's profile creation</li>
+                <li style="padding-left: 10px;">Automation of Service Account creation with API keys</li>
+                <li style="padding-left: 10px;">Automation of unread message sending in Facebook</li>
+                <li style="padding-left: 10px;">Email scraping from any website</li>
+                <li style="padding-left: 10px;">Scraping Amazon.com and Radio.garden</li>
+              </ul>
+            </li>
+            <li><a href="https://www.upwork.com/freelancers/~010606a332165055e3" target="_blank">Upwork &#9734;&#9734;&#9734;&#9734;&#9734;</a>
+              <ul>
+                <h4 style="padding-left: 10px;">Python/ Google Apps Script is used
+                </h4>
+                <li style="padding-left: 10px;">Scraping data from Reverb.com, Google Maps and other websites
+                </li>
+                <li style="padding-left: 10px;">Automation of Tasks in Voices.com
+                </li>
+                <li style="padding-left: 10px;">Google Sheets automation using Google Apps Script
+                </li>
+              </ul>
+            </li><li><a href="https://www.freelancer.com/u/MSAK931" target="_blank">Freelancer &#9734;&#9734;&#9734;&#9734;&#9734;</a>
+              <ul>
+                <h4 style="padding-left: 10px;">Python is used in all the projects</h4>
+                <li style="padding-left: 10px;">Automation of message sending to a group's members in Facebook
+                </li>
+                <li style="padding-left: 10px;">Scraping data from duikersgids.nl
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+
+
+      <div class="pro2">
+        <li>Website 
+          <ul>
+            <li><a href="https://msakabir.github.io/CourseSite/" target="_blank">Course Site</a></li>
+            <li><a href="https://msakabir.github.io/formal/" target="_blank">Formal</a></li>
+            <li><a href="https://msakabir.github.io/casual/" target="_blank">Casual</a></li>
+            <li><a href="https://shaikh-abrar-kabir.github.io/Django_site/" target="_blank">using Python (Django)</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="pro2">
+        <li>Hardware
+          <ul>
+            <li><a href="https://shaikh-abrar-kabir.github.io/Digital-Clock/" target="_blank">Digital Clock using Arduino</a></li>
+            <li><a href="https://drive.google.com/open?id=1adOpV8M7rNYZHln9kNci0T1Oz2kAEaUr" target="_blank">Surge Protector</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="pro2">
+        <li>  Software
+          <ul style="list-style-type: none">
+            <div class="pro3">
+              <li>Google Sheets and Google Apps Script
+                <ul>
+                  <li style="list-style-type: none;">
+                    <div id="p15">
+                      
+                        <center>
+                        <div id="p15a"> 
+                          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7xsTzvooqVdO_eaWpDyKDbY8QOTxuZ6tj3SgCVxZTXDKXUYejXV9JU4Y7y6Dvlns_yb1xebTNqe7b/pubhtml?widget=true&amp;
+                              headers=false">
+                          </iframe>
+                          </div>
+                          <a href="https://docs.google.com/spreadsheets/d/1OShU-gLe9Okhmu0oJ7VX_dtzlOHDnckIMliySZpTGeE/edit#gid=2049292039"  target="_blank">
+                          <p><center><h4>Routine Automation
+                        </h4></center></p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div class="pro3">
+              <li>BER Analyzer
+                <ul>
+                  <li style="list-style-type: none;">
+                    <div id="p15">
+                      <a href="https://shaikh-abrar-kabir.github.io/BER-Analyzer/"  target="_blank">
+                        <center>
+                        <div id="p15a"> 
+                          <img src="projects/p2.jpg">
+                        </div>                
+                        <h4>MATLAB GUI</h4> 
+                        </center>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li style="list-style-type: none;">
+                    <div id="p15">
+                      <a href="https://shaikh-abrar-kabir.github.io/flutter/"  target="_blank">
+                        <center>   
+                        <div id="p15a"> 
+                          <img src="projects/p4a.JPG">
+                        </div>                 
+                        <h4>Android Studio (Flutter)</h4> 
+                        </center>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </div>
+
+                    <div class="pro3">
+                     <li>MATLAB GUI Based Applications
+
+                      <ul>
+
+
+                        <li style="list-style-type: none;">
+
+                          <div id="p15">
+                            <a href="https://shaikh-abrar-kabir.github.io/Age-Counter-with-Bangla-English-Calendar/"  target="_blank">
+
+                              <center>   <div id="p15a"> <img src="projects/p5.jpg" >
+                              </div>                <h4>Age Counter with Bangla & English Calendar</h4> </center></a>
+
+                            </div></li>
+
+
+
+
+
+                            <li style="list-style-type: none;">
+                              <div id="p15">
+                                <a href="https://shaikh-abrar-kabir.github.io/Audio-Mixer-with-Frequency-Converter/"  target="_blank">
+
+                                  <center>   <div id="p15a"> <img src="projects/p9.jpg" >
+                                  </div>                <h4>Audio Mixer with Frequency Converter</h4> </center>
+                                </a>
+                              </div></li>
+
+
+
+
+                              <li style="list-style-type: none;">
+                                <div id="p15">
+                                  <a href="https://shaikh-abrar-kabir.github.io/Sentence-Detector-for-Triphone-Model/"  target="_blank">
+                                    <center>   <div id="p15a"> <img src="projects/p14.jpg" >
+                                    </div>                 <h4>Sentence Detector for Triphone Model</h4> </center>
+                                  </a>
+                                </div></li>
+
+
+
+
+                                <center><button onclick="change1mg()"  id="myButton1mg">More in MATLAB GUI <i class="fa fa-arrow-circle-down"></i></button></center>
+                                <center><button onclick="change2mg()"  id="myButton2mg">Hide Extra of MATLAB GUI <i class="fa fa-arrow-circle-up"></i></button></center>
+                                <div id="myDIVmg"> 
+
+                                  <li><a href="https://shaikh-abrar-kabir.github.io/Sentence-Detector-for-Monophone-Model/" target="_blank">Sentence Detector for Monophone Model</a></li>
+
+                                  <li><a href="https://shaikh-abrar-kabir.github.io/Audio-Recorder/" target="_blank">Audio Recorder</a></li>
+
+                                  <li><a href="https://shaikh-abrar-kabir.github.io/Alarm-Clock/" target="_blank">Digital Alarm Clock</a></li>
+
+
+                                </div>
+
+                              </ul></li></div>
+
+
+                              <div class="pro3">
+                                <li>MATLAB
+
+                                  <ul>
+
+
+
+                                    <li style="list-style-type: none;">
+                                      <div id="p15">
+                                        <a href="https://shaikh-abrar-kabir.github.io/Chess/"  target="_blank">
+                                          <center>   <div id="p15a"> <img src="projects/p1.jpg" >
+                                          </div>                <h4>Chess</h4> </center>
+                                        </a>
+                                      </div></li>
+
+
+
+                                      <li style="list-style-type: none;">
+                                        <div id="p15">
+                                          <a href="https://shaikh-abrar-kabir.github.io/4-in-a-row/"  target="_blank">
+                                            <center>   <div id="p15a"> <img src="projects/p15.jpg" >
+                                            </div>                 <h4>4 in a Row</h4> </center>
+                                          </a>
+                                        </div></li>
+
+
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/Snakes-and-Ladders/" target="_blank">Snakes and Ladders (with cheatcode)</a></li>
+
+
+
+
+
+
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/Grade-Counter-for-AUST/" target="_blank">Grade Counter for AUST</a></li>
+
+
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/Convert-Audio-to-8D/" target="_blank">8D Audio Converter</a></li>
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/Video-Maker-Using-Audio-and-JPEG-PNG/" target="_blank">Video Maker using Audio and JPEG/PNG</a></li>
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/GIF-to-Video-Converter/" target="_blank">Video Maker using Audio and GIF</a></li>
+
+                                        <center><button onclick="change1m()"  id="myButton1m">More in MATLAB <i class="fa fa-arrow-circle-down"></i></button></center>
+                                        <center><button onclick="change2m()"  id="myButton2m">Hide Extra of MATLAB <i class="fa fa-arrow-circle-up"></i></button></center>
+                                        <div id="myDIVm">
+
+
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/Video-Cutter/" target="_blank">Video Cutter</a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/Video-to-GIF-Converter/" target="_blank">Video to GIF Converter</a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/JPEG-PNG-to-GIF-Converter/" target="_blank">JPEG/PNG to GIF Converter </a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/GIF-Editor/" target="_blank">GIF Editor</a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/Video-to-PDF-Converter/" target="_blank">Video to PDF Converter</a></li>
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/JPEG-PNG-to-PDF-Converter/" target="_blank">JPEG/PNG to PDF Converter</a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/GIF-to-PDF-Converter/" target="_blank">GIF to PDF Converter</a></li>
+
+                                          <li><a href="https://shaikh-abrar-kabir.github.io/Frequency-Converter/" target="_blank">Frequency Converter</a></li>
+
+
+                                        </div>
+                                      </ul>
+
+                                    </li>
+                                  </div>
+
+                                  <div class="pro3">
+                                    <li>Python
+
+                                      <ul >
+
+
+
+
+                                        <li style="list-style-type: none;">
+                                          <div id="p15">
+                                            <a href="https://shaikh-abrar-kabir.github.io/wifi_pass/"  target="_blank">
+                                              <center>   <div id="p15a"> <img src="projects/p6a.JPG" >
+                                              </div>                 <h4>Wifi Password Cracker (GUI)</h4> </center>
+                                            </a>
+                                          </div></li>
+
+
+
+
+
+
+                                          <li style="list-style-type: none;">
+                                            <div id="p15">
+                                              <a href="https://shaikh-abrar-kabir.github.io/Audio_8D_pc/"  target="_blank">
+                                                <center>   <div id="p15a"> <img src="projects/p8.png" >
+                                                </div>                <h4>8D Audio Converter (GUI)</h4> </center>
+                                              </a>
+                                            </div></li>
+
+
+
+
+
+
+                                            <li style="list-style-type: none;">
+                                              <div id="p15">
+                                               <a href="https://shaikh-abrar-kabir.github.io/Audio_8D_web/"  target="_blank">
+                                                <center>   <div id="p15a"> <img src="projects/p7.png" >
+                                                </div>                <h4>8D Audio Converter (web)</h4> </center>
+                                              </a>
+                                            </div></li>
+
+
+
+
+
+
+                                            <li style="list-style-type: none;">
+                                              <div id="p15">
+                                               <a href="https://shaikh-abrar-kabir.github.io/AudioExcel/"  target="_blank">
+                                                <center>   <div id="p15a"> <img src="projects/p3.png" >
+                                                </div>                <h4>Excel Editor using Speech Recognition (GUI)</h4> </center></a>
+
+                                              </div></li>
+
+
+
+
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Digital-Signal-Processing-using-Python/" target="_blank">Digital Signal Processing</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Audio-Cutter/" target="_blank">Audio Cutter</a></li>
+
+
+                                            </ul>
+
+                                          </li>
+
+                                        </div>
+
+
+                                        <div class="pro3">
+                                          <li>Age Counter with Calendar (following programming languages used)
+
+
+                                            <ul>
+
+
+                                              <li style="list-style-type: none;">
+                                                <div id="p15">
+                                                 <a href="https://shaikh-abrar-kabir.github.io/Age-Counter-Js/"  target="_blank">
+                                                  <center>   <div id="p15a"> <img src="projects/p10.jpg" >
+                                                  </div>                 <h4>JS, HTML, CSS</h4> </center>
+                                                </a>
+                                                <center> <h4><a href="https://shaikh-abrar-kabir.github.io/jscalendarrun/" target="_blank" style="color: rgb(0,00,50);">Run App</a></h4> </center>
+                                              </div></li>
+
+
+
+                                              <li style="list-style-type: none;">
+                                                <div id="p15">
+                                                 <a href="https://shaikh-abrar-kabir.github.io/Age-Counter-Php/"  target="_blank">
+                                                  <center>   <div id="p15a"> <img src="projects/p11.png" >
+                                                  </div>                 <h4>PHP, HTML, CSS</h4> </center>
+                                                </a>
+                                              </div></li>
+
+
+
+                                            </ul>
+
+
+                                            <div class="row">
+
+                                              <div class="column1">
+                                                <ul>
+
+                                                  <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-Go/" target="_blank">Go</a>
+                                                  </li>
+
+                                                  <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter/" target="_blank">MATLAB</a>
+                                                  </li>
+
+                                                </li>
+                                                <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-Python/" target="_blank">Python</a>
+                                                </li>
+
+                                              </li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-JAVA/" target="_blank">Java</a>
+                                              </li>
+
+                                            </ul>
+                                          </div>
+
+                                          <div class="column2" >
+                                            <ul>
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-C/" target="_blank">C</a>
+                                                <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-Cpp/" target="_blank">C++</a>
+                                                </li>
+                                                <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-C-/" target="_blank">C#</a>
+                                                </li>
+
+                                                <li><a href="https://shaikh-abrar-kabir.github.io/Age-Counter-R/" target="_blank">R</a>
+                                                </li>
+
+                                              </ul>
+                                            </div>
+                                          </div>
+
+                                        </li>
+                                      </div>
+
+
+                                   <!--    <div class="pro3">
+                                       <li>Web Development using JS, HTML, CSS
+
+                                         <ul >
+
+                                          <li><a href="https://msakabir.github.io/CourseSite/" target="_blank">Course Site</a></li>
+
+                                          <li><a href="https://msakabir.github.io/formal/" target="_blank">Formal</a></li>
+
+                                          <li><a href="https://msakabir.github.io/casual/" target="_blank">Casual</a></li>
+
+                                          <li><a href="https://msakabir.herokuapp.com" target="_blank">using Python (Django)</a></li>
+
+
+
+                                        </ul>
+
+                                      </li>
+
+                                    </div> -->   
+
+
+
+                                    <div class="pro3">
+
+                                     <li>CGPA Calculator
+
+                                      <ul>
+
+
+
+                                        <li style="list-style-type: none;">
+                                          <div id="p15">
+                                           <a href="https://shaikh-abrar-kabir.github.io/android/"  target="_blank">
+                                            <center>   <div id="p15a"> <img src="projects/p12a.JPG" >
+                                            </div>                  <h4>Android Studio</h4> </center>
+                                          </a>
+                                        </div></li>
+
+                                     <!--     <div id = "scroller">   </div> -->
+
+
+                                        <li style="list-style-type: none;">
+                                          <div id="p15">
+                                           <a href="https://shaikh-abrar-kabir.github.io/jframe/"  target="_blank">
+                                            <center>   <div id="p15a"> <img src="projects/p13a.JPG" >
+                                            </div>                  <h4>Swing JFrame</h4> </center>
+                                          </a>
+                                        </div></li>
+
+
+
+
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/tkinter/" target="_blank">Python GUI</a></li>
+
+                                      </ul>
+
+                                    </li></div>
+
+
+
+
+                                    <li style="list-style-type: disc;"><a href="https://drive.google.com/open?id=1f298C4ECeTXkDB0qaHkNbjGTMQjL4sOl" target="_blank">Automatic Slot Switching using Proteus</a></li>
+                                    <li style="list-style-type: disc;"><a href="https://shaikh-abrar-kabir.github.io/SmartGradeSheet/" target="_blank">Smart Grade Sheet</a></li>
+                                    <li style="list-style-type: disc;"><a href="https://shaikh-abrar-kabir.github.io/Rectifier/" target="_blank">230V(p) AC to 15V DC converter using PSpice</a></li>
+
+
+
+                                    
+                                    <center><button onclick="change1()"  id="myButton1">More <i class="fa fa-arrow-circle-down"></i></button></center>
+                                    <center><button onclick="change2()"  id="myButton2">Hide <i class="fa fa-arrow-circle-up"></i></button></center>
+                                    <div id="myDIV">
+                                     <div class="pro3">
+
+                                     </li>
+                                     <li>Cadence
+                                      <ul>
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/4-Bit-Adder/" target="_blank">4 Bit Full Adder</a>
+                                        </li>
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/4-Bit-Ring-Counter/" target="_blank">4 Bit Ring Counter</a>
+                                        </li>
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/4-Bit-Johnson-Counter/" target="_blank">4 Bit Johnson Counter</a>
+                                        </li>
+                                        <li><a href="https://shaikh-abrar-kabir.github.io/Write-and-Read-Memory/" target="_blank">4 Bit Write and Read Memory</a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </div>
+
+                                  <div class="pro3">
+                                   <li>AutoCAD
+                                    <ul style="padding-left: 2%">
+                                      <li>2D
+                                        <ul style="padding-left: 2%;list-style-type: georgian;">
+
+                                         <li>Electrical & Electronic
+
+                                          <ul  style="list-style-type: lower-roman;padding-left: 2%">
+
+                                            <li><a href="https://shaikh-abrar-kabir.github.io/Electrical--Electronic-Symbols/" target="_blank">Electrical & Electronic Symbols</a></li>
+
+                                            <li><a href="https://shaikh-abrar-kabir.github.io/Wiring-a-500-sq-ft-Flat-with-Circuit-Diagram/" target="_blank">Wiring a Flat with Circuit Diagram</a></li>
+
+
+
+                                            <li><a href="https://shaikh-abrar-kabir.github.io/500-kv-Steel-Self-Supporting-Transmission-Tower/" target="_blank">500-kv Steel Self-Supporting Transmission Tower</a></li>
+
+                                            <center><button onclick="change1a()"  id="myButton1a">More in AutoCAD (2D) <i class="fa fa-arrow-circle-down"></i></button></center>
+                                            <center><button onclick="change2a()"  id="myButton2a">Hide Extra of AutoCAD (2D) <i class="fa fa-arrow-circle-up"></i></button></center>
+                                            <div id="myDIVa">
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Schemaic-Diagram-of-Transformer-and-Three-Phase-Connections/" target="_blank">Schemaic Diagram of Transformer and Three Phase Connections</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Rotary-Converter-and-Full-Wave-Bridge-Rectifier/" target="_blank">Rotary Converter and Full-Wave Bridge Rectifier</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Electrical-Duct-Banks-and-3-Phase-4-Wire-Loadcenter/" target="_blank">Electrical Duct Banks and 3-Phase 4-Wire Loadcenter</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Surge-Protector/" target="_blank">Surge Protector</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/2-km-FM-Transmitter/" target="_blank">2 km FM Transmitter</a></li>
+
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/Automatic-Light-Controller/" target="_blank">Automatic Light Controller</a></li>
+                                            </div>
+
+                                          </ul>
+
+                                        </li>
+
+                                        <li>
+                                          <a href="https://shaikh-abrar-kabir.github.io/AutoCAD-2D/" target="_blank">Side View of Some Vehicles </a>
+                                          <ul  style="list-style-type: lower-roman;padding-left: 2%">
+                                            <li>Ferrari 458 Spider</li>
+                                            <li>Ghost Rider</li>
+                                            <li>Ford</li>
+                                            <li>Boeing 777 (Qatar Airlines)</li>
+                                          </ul></li></ul></li>
+                                          <li>3D
+                                            <ul style="padding-left: 2%;list-style-type: georgian">
+                                              <li><a href="https://shaikh-abrar-kabir.github.io/3D-Room/" target="_blank">Designing and Capturing Video of Room</a></li>
+                                            </ul></li>
+                                          </ul>
+
+                                        </li></div>
+
+
+
+
+
+
+
+
+                                        <div class="pro3">
+                                         <li><a href="https://drive.google.com/open?id=13T1kb-Wc_CIYf4ca5hpg3UkBRmkl9afp" target="_blank">Quartus (Verilog HDL)</a>
+
+                                          <ul >
+
+                                            <li><!--a href=</a-->
+                                              4:1 Mux (simple & using 2:1 mux), 16:1 Mux using 4:1 Mux
+                                            </li>
+
+                                            <li><!--a href=</a-->
+                                              1 Digit BCD Adder
+                                            </li>
+
+                                            <li><!--a href=</a-->
+                                              4 bit Comparator, Full Adder, Up-Down Counter
+                                            </li>
+
+                                            <li><!--a href=</a-->
+                                              7 Segment Decoder
+                                            </li>
+
+                                            <li><!--a href=</a-->
+                                              Universal Shift Register
+                                            </li>
+
+                                            <li><!--a href=</a-->
+                                              JK Flip-Flop using D Flip-Flop, T Flip-Flop using JK Filp-Flop
+                                            </li>
+
+                                          </ul>
+                                        </li>
+                                      </div>
+
+
+                                    </ul>
+                                  </li>
+                                </div>
+                              </div>
+                            </div>
+                            <script type="text/javascript">
+
+                              function change1()
+                              {
+                                var elem1 = document.getElementById("myButton1");
+                                var elem2 = document.getElementById("myButton2");
+                                var x = document.getElementById("myDIV");
+                                elem1.style.display = "none";
+                                elem2.style.display = "block";
+                                x.style.display = "block";   
+                              }
+                              function change2()
+                              {
+                                var elem1 = document.getElementById("myButton1");
+                                var elem2 = document.getElementById("myButton2");
+                                var x = document.getElementById("myDIV");
+                                elem2.style.display = "none";
+                                elem1.style.display = "block";
+                                x.style.display = "none";
+
+                              }
+                              function change1m()
+                              {
+                                var elem1 = document.getElementById("myButton1m");
+                                var elem2 = document.getElementById("myButton2m");
+                                var x = document.getElementById("myDIVm");
+                                elem1.style.display = "none";
+                                elem2.style.display = "block";
+                                x.style.display = "block";   
+                              }
+                              function change2m()
+                              {
+                                var elem1 = document.getElementById("myButton1m");
+                                var elem2 = document.getElementById("myButton2m");
+                                var x = document.getElementById("myDIVm");
+                                elem2.style.display = "none";
+                                elem1.style.display = "block";
+                                x.style.display = "none";
+
+                              }
+                              function change1mg()
+                              {
+                                var elem1 = document.getElementById("myButton1mg");
+                                var elem2 = document.getElementById("myButton2mg");
+                                var x = document.getElementById("myDIVmg");
+                                elem1.style.display = "none";
+                                elem2.style.display = "block";
+                                x.style.display = "block";   
+                              }
+                              function change2mg()
+                              {
+                                var elem1 = document.getElementById("myButton1mg");
+                                var elem2 = document.getElementById("myButton2mg");
+                                var x = document.getElementById("myDIVmg");
+                                elem2.style.display = "none";
+                                elem1.style.display = "block";
+                                x.style.display = "none";
+
+                              }
+                              function change1a()
+                              {
+                                var elem1 = document.getElementById("myButton1a");
+                                var elem2 = document.getElementById("myButton2a");
+                                var x = document.getElementById("myDIVa");
+                                elem1.style.display = "none";
+                                elem2.style.display = "block";
+                                x.style.display = "block";   
+                              }
+                              function change2a()
+                              {
+                                var elem1 = document.getElementById("myButton1a");
+                                var elem2 = document.getElementById("myButton2a");
+                                var x = document.getElementById("myDIVa");
+                                elem2.style.display = "none";
+                                elem1.style.display = "block";
+                                x.style.display = "none";
+
+                              }
+                            </script>
+                          </body>
+                          </html>

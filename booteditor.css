@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+}
+    body{
+        font-size: 20px;
+    }
+
+ .cont{
+  margin-left: 25vw;
+}
+#navbar {
+  overflow: hidden;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to right, #444, #222);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 5px solid rgba(252, 255, 190 ,0.3) ;
+  z-index: 1;
+  margin: 0;
+}
+
+#navbar a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  padding-left: 4px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #111, #000);
+  color: rgb(200,200,200);
+  border:4px solid rgb(200,200,200);
+  border-radius: 10px 10px;
+}
+.nav li{
+    float: left;
+    list-style-type: none;
+}
+
+#navbar button {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgb(0,0,20),rgb(0,0,10));
+  color: rgb(200,200,250);
+  border:4px solid rgb(200,200,250);
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+
+}
+
+#navbar a:hover {
+  border:5px solid rgb(250,250,250);
+ background-image: linear-gradient(to right, rgb(50,0,0),rgb(20,0,10));
+  color: rgb(250,250,250);
+  padding: 2px;
+}
+#navbar button:hover {
+  border:4px solid rgb(200,250,230);
+ background-image: linear-gradient(to right, rgb(0,50,0),rgb(0,10,0));
+  color: rgb(200,250,230);
+}
+
+#navbar .active a{
+ background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+color: rgb(80,80,60);
+border:5px solid rgb(130,130,100);
+padding: 2px;
+animation: act 02s ease-in-out infinite;
+ animation-direction: alternate-reverse;
+}
+
+
+#navbar.navbar-shrink{
+  padding-top: 0px;
+}
+
+@keyframes act{
+  0%{ 
+    background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  }
+
+  100%{ 
+    background-image: linear-gradient(to right, rgb(250,250,250),rgb(200,200,200));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  }
+
+  /* 100%{ 
+    background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+    color: rgb(80,80,60);
+    border:5px solid rgb(130,130,100);
+  } */
+  }
+
+#home{
+  height: 1000px;
+}
+#about {
+  height: 1000px;
+}
+#background {
+  height: 1000px;
+}
+#research {
+  height: 4500px;
+ }
+#project{
+   height: 8000px;
+}
+#skill {
+  height: 4700px;
+}
+#course {
+   height: 1000px;
+}
+
+#award {
+   height: 2200px;
+}
+#contact {
+    height: 1000px;
+}
+        
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ 
+ 
+ /*------------------------------------------                    ANDROID                -------------------------------------------------------------------*/
+
+ 
+ 
+  /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ 
+
+ 
+ 
+
+
+
+   @media only screen and (max-width: 1750px) {
+ .cont{
+  margin-left: 15vw;
+}
+ }
+     @media only screen and (max-width: 1550px) {
+ .cont{
+  margin-left: 8vw;
+}
+ }
+     @media only screen and (max-width: 1450px) {
+ .cont{
+  margin-left: 5vw;
+}
+
+     @media only screen and (max-width: 1300px) {
+ .cont{
+  margin-left: 2vw;
+}
+
+ }
+
+ @media only screen and (max-width: 800px) {
+*{
+    margin: 0;
+    padding: 0;
+  }
+        body{
+        font-size: 11px;
+    }
+ .cont{
+  margin-left: 1vw;
+  margin-right: 1%;
+}
+#navbar {
+  border-bottom: 3px solid rgba(252, 255, 190 ,0.3) ;
+  padding-bottom: 2px;
+}
+
+#navbar a {
+  margin-left: 4px;
+  padding: 2px;
+   padding-left: 3px;
+  text-decoration: none;
+  border:3px solid rgb(200,200,200);
+  border-radius: 8px 8px;
+}
+
+#navbar a:hover {
+  background-image: linear-gradient(to right, #111, #000);
+  color: rgb(200,200,200);
+  border:3px solid rgb(200,200,200);
+padding: 2px;
+padding-left: 3px;
+}
+
+#navbar  .active a{
+   background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+color: rgb(80,80,60);
+border:3px solid rgb(130,130,100);
+padding: 2px;
+animation: act2 1s ease-in-out infinite;
+ animation-direction: alternate;
+}
+
+@keyframes act2{
+  0%{ background-image: linear-gradient(to right, rgb(250,250,230),rgb(200,200,180));
+  color: rgb(80,80,60);
+border:3px solid rgb(130,130,100);}
+
+  50%{ background-image: linear-gradient(to right, rgb(235,235,215),rgb(190,190,170));
+    color: rgb(70,70,50);
+    border:3px solid rgb(115,115,90);}
+
+  100%{ background-image: linear-gradient(to right, rgb(220,220,200),rgb(180,180,160));
+    color: rgb(60,60,40);
+    border:3px solid rgb(100,100,80);}
+      
+      }
+
+
+#navbar button {
+  margin-left: 4px;
+  padding: 2px;
+  text-decoration: none;
+  border:3px solid rgb(200,200,250);
+  font-size: 11px;
+}
+
+#navbar button:hover {
+  margin-left: 4px;
+  padding: 2px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, rgb(0,0,20),rgb(0,0,10));
+  color: rgb(200,200,250);
+  border:3px solid rgb(200,200,250);
+}
+
+
+
+
+
+
+#research {
+  height: 5500px;
+ }
+ #project{
+   height: 5500px;
+}
+
+
+}
