@@ -112,10 +112,10 @@ animation: act 02s ease-in-out infinite;
   height: 1000px;
 }
 #research {
-  height: 4500px;
+  height: 6000px;
  }
 #project{
-   height: 12000px;
+   height: 13000px;
 }
 #skill {
   height: 4700px;
@@ -168,6 +168,15 @@ animation: act 02s ease-in-out infinite;
      @media only screen and (max-width: 1300px) {
  .cont{
   margin-left: 2vw;
+}
+#award {
+  height: 4000px;
+}
+#research {
+  height: 9000px;
+ }
+ #project{
+   height: 14000px;
 }
 
  }
@@ -254,10 +263,10 @@ border:3px solid rgb(130,130,100);}
 
 
 #research {
-  height: 5500px;
+  height: 6000px;
  }
  #project{
-   height: 9500px;
+   height: 9000px;
 }
 
 
